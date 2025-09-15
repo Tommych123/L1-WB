@@ -6,7 +6,7 @@ var justString string
 
 func someFunc() {
 	v := createHugeString(1 << 10)       // Вызов функции
-	justString = string([]byte(v[:100])) // берем последние 100 символов строки
+	justString = string([]byte(v[:100])) // берем только первые 100 символов строки
 }
 
 func createHugeString(size int) string {
