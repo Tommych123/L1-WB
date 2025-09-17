@@ -10,7 +10,7 @@ func quickSort(arr []int) []int { // функция сортировки
 	var left []int              // массив в котором элементы меньше либо равны опорному
 	var right []int             // массив в котором элементы больше опорного
 	for _, v := range arr[1:] { // перебираем весь массив кроме первого элемента
-		if v <= pivot { // сортировка оставшегося массива на left и right
+		if v <= pivot { // разделение оставшегося массива на left и right
 			left = append(left, v)
 		} else {
 			right = append(right, v)
