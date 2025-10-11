@@ -28,7 +28,7 @@ func reverseWords(s string) string {
 }
 
 func main() {
-	input := "snow dog sun" // исходные данные
+	input := "snow dog sun"       // исходные данные
 	output := reverseWords(input) // вызов основной функции
 	fmt.Println(output)
 }
